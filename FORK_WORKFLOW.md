@@ -18,10 +18,10 @@ main                          # Clean mirror of upstream/main
 
 ```bash
 # Your fork (origin)
-origin: https://github.com/code-agents/emdash-x.git
+origin: https://github.com/[your-username]/emdash-x.git
 
-# Upstream repository (when available)
-upstream: [upstream-repo-url]
+# Upstream repository
+upstream: https://github.com/generalaction/emdash
 ```
 
 ## Branch Naming Conventions
@@ -76,8 +76,8 @@ git custom-log
 
 #### 1. Initial Setup
 ```bash
-# Add upstream remote (when repository becomes available)
-git remote add upstream [upstream-repo-url]
+# Add upstream remote
+git remote add upstream https://github.com/generalaction/emdash
 
 # Verify remotes
 git remote -v
@@ -232,7 +232,7 @@ When conflicts arise during upstream sync:
 **Solution**: Check remote URL and network connection
 ```bash
 git remote -v
-git remote set-url upstream [correct-url]
+git remote set-url upstream https://github.com/generalaction/emdash
 ```
 
 **Issue**: Merge conflicts in custom/main  
@@ -246,10 +246,10 @@ git config --get-regexp alias
 
 ## Current Status
 
-- **Fork**: https://github.com/code-agents/emdash-x
+- **Fork**: https://github.com/[your-username]/emdash-x
+- **Upstream**: https://github.com/generalaction/emdash ✅
 - **Custom Branch**: `custom/main` (created)
 - **Git Aliases**: Configured ✅
-- **Upstream**: Not yet configured (repository not available)
 
 ## Notes
 
